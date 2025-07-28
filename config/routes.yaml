@@ -1,0 +1,6 @@
+# WICHTIG: type: attribute, NICHT annotation!
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute

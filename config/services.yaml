@@ -1,0 +1,30 @@
+parameters:
+    app.project_dir: '%kernel.project_dir%'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+
+    App\Controller\:
+        resource: '../src/Controller/'
+        tags: ['controller.service_arguments']
+
+    App\Application\Service\CollectionService:
+        arguments:
+            $projectDir: '%app.project_dir%'
+
+    App\Command\LoadDataCommand:
+        arguments:
+            $projectDir: '%app.project_dir%'
+
+    App\Controller\Api\DataLoaderController:
+        arguments:
+            $projectDir: '%app.project_dir%'
