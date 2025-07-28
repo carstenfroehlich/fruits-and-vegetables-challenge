@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "303f504a-ae54-4ebb-aa96-441c92706a52",
+		"name": "roadsurfer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1785619"
+	},
+	"item": [
+		{
+			"name": "load-data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 1,\r\n    \"name\": \"Carrot\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 10922,\r\n    \"unit\": \"g\"\r\n  },\r\n  {\r\n    \"id\": 2,\r\n    \"name\": \"Apples\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 20,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 3,\r\n    \"name\": \"Pears\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 3500,\r\n    \"unit\": \"g\"\r\n  },\r\n  {\r\n    \"id\": 4,\r\n    \"name\": \"Melons\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 120,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 5,\r\n    \"name\": \"Beans\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 65000,\r\n    \"unit\": \"g\"\r\n  },\r\n  {\r\n    \"id\": 6,\r\n    \"name\": \"Beetroot\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 950,\r\n    \"unit\": \"g\"\r\n  },\r\n  {\r\n    \"id\": 7,\r\n    \"name\": \"Broccoli\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 3,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 8,\r\n    \"name\": \"Berries\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 10000,\r\n    \"unit\": \"g\"\r\n  },\r\n  {\r\n    \"id\": 9,\r\n    \"name\": \"Tomatoes\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 5,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 10,\r\n    \"name\": \"Celery\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 20,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 11,\r\n    \"name\": \"Cabbage\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 500,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 12,\r\n    \"name\": \"Onion\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 50,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 13,\r\n    \"name\": \"Cucumber\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 8,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 14,\r\n    \"name\": \"Bananas\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 100,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 15,\r\n    \"name\": \"Oranges\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 24,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 16,\r\n    \"name\": \"Avocado\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 10,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 17,\r\n    \"name\": \"Lettuce\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 20830,\r\n    \"unit\": \"g\"\r\n  },\r\n  {\r\n    \"id\": 18,\r\n    \"name\": \"Kiwi\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 10,\r\n    \"unit\": \"kg\"\r\n  },\r\n  {\r\n    \"id\": 19,\r\n    \"name\": \"Kumquat\",\r\n    \"type\": \"fruit\",\r\n    \"quantity\": 90000,\r\n    \"unit\": \"g\"\r\n  },\r\n  {\r\n    \"id\": 20,\r\n    \"name\": \"Pepper\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 150,\r\n    \"unit\": \"kg\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/load-data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"load-data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 21,\r\n    \"name\": \"cauliflower\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 300,\r\n    \"unit\": \"kg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Collections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/collections",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"collections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Fruits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/collections/fruit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"collections",
+						"fruit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Vegetables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/collections/vegetable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"collections",
+						"vegetable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 21,\r\n    \"name\": \"cauliflower\",\r\n    \"type\": \"vegetable\",\r\n    \"quantity\": 300,\r\n    \"unit\": \"kg\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/items/vegetable/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"items",
+						"vegetable",
+						"21"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
